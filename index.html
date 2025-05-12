@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Santiago Bergerat" />
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Santiago Bergerat. Responsive layout with CSS Grid and Flexbox. Dynamic footer with JavaScript." />
-  <title>WDD 131 – Dynamic Web Fundamentals - Santiago Bergerat</title>
-  <link rel="stylesheet" href="styles/base.css" />
-  <script src="scripts/getdates.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Santiago Bergerat" />
+    <meta
+      name="description"
+      content="WDD 131 – Dynamic Web Fundamentals. Santiago Bergerat. Responsive layout with CSS Grid and Flexbox. Dynamic footer with JavaScript."
+    />
+    <title>WDD 131 – Dynamic Web Fundamentals - Santiago Bergerat</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>WDD 131 – Dynamic Web Fundamentals - Santiago Bergerat</h1>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/santiago-bergerat-797b7b1ba/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+          </li>
+          <li>
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+              target="_blank"
+              >Scripture</a
+            >
+          </li>
+          <li><a href="#">Final Project</a></li>
+        </ul>
+      </nav>
+    </header>
 
-</head>
-<body>
-  <header>
-    <h1>WDD 131: Dynamic Web Fundamentals</h1>
-    <nav>
-      <ul class="navigation">
-        <li><a href="https://www.linkedin.com/in/santiago-bergerat-797b7b1ba/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
-        <li><a href="#">Final Project</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <section class="card about">
+        <h2>About Me</h2>
+        <img
+          src="images/profile-santiago.jpg"
+          alt="Santiago Bergerat"
+          width="300"
+        />
+        <p>
+          I’m a frontend-focused developer, learning
+          <a href="https://angular.io/" target="_blank">Angular</a> and
+          <a href="https://reactnative.dev/" target="_blank">React Native</a>. I
+          enjoy building responsive interfaces and meaningful digital
+          experiences. I often consult resources like the
+          <a href="https://developer.mozilla.org/" target="_blank"
+            >MDN Web Docs</a
+          >
+          to improve my frontend skills.
+        </p>
+      </section>
 
-  <main>
-    <section class="card">
-      <h2>About Me</h2>
-      <img src="images/profile-santiago.jpg" alt="Santiago Bergerat" width="300" />
-      <p>I’m a frontend-focused developer, learning Angular and React Native. I enjoy building responsive interfaces and meaningful digital experiences.</p>
-    </section>
+      <section class="card">
+        <h2>Favorite Scripture</h2>
+        <img src="images/nephi-scripture.png" alt="Scripture" width="300" />
+        <p>
+          “I will go and do the things which the Lord hath commanded.” — 1 Nephi
+          3:7
+        </p>
+      </section>
+    </main>
 
-    <section class="card">
-      <h2>Favorite Scripture</h2>
-      <img src="images/nephi-scripture.png" alt="Scripture" width="300" />
-      <p>“I will go and do the things which the Lord hath commanded.” — 1 Nephi 3:7</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="currentyear"></span> Santiago Bergerat | Argentina</p>
-    <p id="lastModified"></p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Santiago Bergerat | Argentina</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
