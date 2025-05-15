@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Santiago Bergerat" />
+    <meta
+      name="keywords"
+      content="temples, photo album, HTML, CSS, JavaScript, Santiago Bergerat, WDD 131, responsive design"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="WDD 131 – Temple Photo Album by Santiago Bergerat. Responsive layout using HTML, CSS Grid, and JavaScript."
+    />
+    <title>Temple Photo Album | WDD 131</title>
+
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link
+      rel="stylesheet"
+      href="styles/temples-large.css"
+      media="(min-width: 768px)"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container-width">
+      <header class="header">
+        <div class="header-bar">
+          <span class="logo">Temple Album</span>
+          <a id="menu" href="#"></a>
+        </div>
+
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="title-home"><h1>Welcome to Temple Album</h1></div>
+
+        <section >
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+          <div class="container-img">
+            <figure>
+              <img src="images/temple-home/temple-mendoza.jpg" alt="Photo temple mendoza" />
+              <figcaption>Temple Mendoza Argentina</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          &copy; <span id="currentyear"></span> Santiago Bergerat | Argentina
+        </p>
+        <p id="lastModified"></p>
+      </footer>
+    </div>
+  </body>
+</html>
