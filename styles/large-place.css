@@ -1,0 +1,52 @@
+main {
+  position: relative;
+}
+
+main > .data {
+  position: absolute;
+  width: 300px;
+  padding: 1.5rem;
+background-color:rgba(255, 255, 255, 0.9)
+}
+
+.data > h2 {
+  background-color: rgb(5, 238, 238, 0.9);
+  padding: 1.8rem;
+  margin-left: -3rem;
+
+}
+
+main > .data:nth-of-type(1) {
+  top: 2rem;
+  left: 2rem;
+}
+
+main > .data:nth-of-type(2) {
+  bottom: 2rem;
+  right: 2rem;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .data > h2 {
+    background-color: rgba(206, 171, 96, 0.8);
+  }
+}
+
+.data:last-of-type h2::after {
+  content: " ⛅";
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+
+.weather-icon{
+  display: none;
+}

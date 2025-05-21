@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Place | Santiago Bergerat</title>
+    <meta name="description" content="Place description about san rafael " />
+    <meta name="author" content="Bergerat Santiago" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, web development" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base-place.css" />
+    
+    <link
+      rel="stylesheet"
+      href="styles/large-place.css"
+      media="(min-width: 768px)"
+    />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/places.js" defer></script>
+  </head>
+  <body>
+    <header class="header-container">
+      <h1>San Rafael</h1>
+    </header>
+
+    <main>
+      <picture>
+        <source
+          media="(min-width: 1000px)"
+          srcset="images/place-images/large-place.webp"
+        />
+        <source
+          media="(min-width: 500px)"
+          srcset="images/place-images/medium-place.webp"
+        />
+        <img src="images/place-images/small-place.webp" alt="image about mountains of mendoza" />
+      </picture>
+
+      <div class="data">
+        <h2>Data</h2>
+        <div class="data-grid">
+          <div class="label">Area:</div>
+          <div class="value">31,235 sq km</div>
+
+          <div class="label">Population:</div>
+          <div class="value">200,000</div>
+
+          <div class="label">Capital:</div>
+          <div class="value">San Rafael</div>
+
+          <div class="label">Languages:</div>
+          <div class="value">Spanish</div>
+
+          <div class="label">Currency:</div>
+          <div class="value">Argentine Peso</div>
+
+          <div class="label">Time Zone:</div>
+          <div class="value">UTC-3</div>
+
+          <div class="label">Calling Code:</div>
+          <div class="value">+54</div>
+
+          <div class="label">Internet TLD:</div>
+          <div class="value">.ar</div>
+        </div>
+      </div>
+
+     <div class="data">
+  <h2>Weather</h2>
+
+  <img src="images/place-images/icon-time.svg" alt="Partly Cloudy Icon" class="weather-icon" />
+
+  <div class="data-grid">
+    <div class="label">Temperature:</div>
+    <div class="value">5 °C</div>
+
+    <div class="label">Conditions:</div>
+    <div class="value">Partly Cloudy</div>
+
+    <div class="label">Wind:</div>
+    <div class="value">25 km/h</div>
+
+    <div class="label">Wind Chill:</div>
+    <div class="value">2.8 °C</div>
+  </div>
+</div>
+
+
+
+    </main>
+
+    <footer class="footer-container">
+      <p>&copy; <span id="currentyear"></span> Santiago Bergerat | Argentina</p>
+      <p>San Rafael - Mendoza</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
