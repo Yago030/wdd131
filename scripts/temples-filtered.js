@@ -84,7 +84,7 @@ const temples = [
 const container = document.querySelector(".temple-grid");
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderTemples(temples); 
+  renderTemples(temples);
 });
 
 function clearTemples() {
@@ -103,8 +103,14 @@ function renderTemples(lista) {
       <p>LOCATION: ${temple.location}</p>
       <p>DEDICATED: ${temple.dedicated}</p>
       <p>SIZE: ${temple.area}</p>
-      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-    `;
+      <img 
+        src="${temple.imageUrl}" 
+        alt="${temple.templeName}" 
+        loading="lazy" 
+        width="400" 
+        height="250" 
+        style="object-fit: cover; width: 100%; height: 250px; border-radius: 4px;"> `
+      ;
 
     container.appendChild(card);
   });
@@ -112,7 +118,7 @@ function renderTemples(lista) {
 
 const filterLinks = document.querySelectorAll(".navigation a");
 
-filterLinks.forEach(link => {
+filterLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const tipo = link.getAttribute("data-filter");
@@ -125,16 +131,20 @@ function filterTemples(tipo) {
 
   switch (tipo) {
     case "old":
-      listaFiltrada = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
+      listaFiltrada = temples.filter(
+        (t) => parseInt(t.dedicated.split(",")[0]) < 1900
+      );
       break;
     case "new":
-      listaFiltrada = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
+      listaFiltrada = temples.filter(
+        (t) => parseInt(t.dedicated.split(",")[0]) > 2000
+      );
       break;
     case "large":
-      listaFiltrada = temples.filter(t => t.area > 90000);
+      listaFiltrada = temples.filter((t) => t.area > 90000);
       break;
     case "small":
-      listaFiltrada = temples.filter(t => t.area < 10000);
+      listaFiltrada = temples.filter((t) => t.area < 10000);
       break;
     default:
       listaFiltrada = temples;
