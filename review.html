@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/styles-form.css" />
+</head>
+<body>
+  <header>
+    <h1>Thank you for your review!</h1>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p id="counter"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BYU-Idaho | All rights reserved</p>
+  </footer>
+
+  <script>
+    let count = localStorage.getItem("reviewCount") || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("counter").textContent = `Total reviews submitted: ${count}`;
+  </script>
+</body>
+</html>

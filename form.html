@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/styles-form.css" />
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <label for="productName">Product Name</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a product...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <div class="rating">
+          <label><input type="radio" name="rating" value="1" required /> ☆</label>
+          <label><input type="radio" name="rating" value="2" /> ☆☆</label>
+          <label><input type="radio" name="rating" value="3" /> ☆☆☆</label>
+          <label><input type="radio" name="rating" value="4" /> ☆☆☆☆</label>
+          <label><input type="radio" name="rating" value="5" /> ☆☆☆☆☆</label>
+        </div>
+      </fieldset>
+
+      <label for="installDate">Installation Date</label>
+      <input type="date" id="installDate" name="installDate" required />
+
+      <fieldset>
+        <legend>Useful Features</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Easy to use" /> Easy to use</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Durable" /> Durable</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Efficient" /> Efficient</label>
+      </fieldset>
+
+      <label for="review">Written Review</label>
+      <textarea id="review" name="review" rows="4" placeholder="Share your experience..."></textarea>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Optional" />
+
+      <input type="submit" value="Submit Review" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BYU-Idaho | All rights reserved</p>
+  </footer>
+</body>
+</html>
